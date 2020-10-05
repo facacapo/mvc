@@ -7,8 +7,11 @@ class Home extends Controllers{
      	parent::__construct();
      }
 
-     public function home($params){
-     	$this->views->getView($this, "home");
+     public function home(){
+          $data['tag_page'] = "Home";
+          $data['page_title'] = "Página principal";
+          $data['page_name'] = "home";
+     	$this->views->getView($this, "home", $data);
      }
 
      public function carrito($params){
