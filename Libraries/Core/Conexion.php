@@ -8,7 +8,7 @@
 			try {
 				$this->conect = new PDO($connectionString, DB_USER, DB_PASS);
 				$this->conect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-				echo 'Conexion establecida';
+				// echo 'Conexion establecida';
 			} catch (Exception $e) {
 				$this->conect = "Error de conexión";
 				echo 'ERROR: ' . $e->getMessage();
@@ -16,7 +16,7 @@
 		}
 
 		public function conect(){
-			return $this->connect;
+			return $this->conect;
 			
 		}
 		

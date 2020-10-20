@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Carpetas del proyecto
+1-Templates/
+2-Zips/
